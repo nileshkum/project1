@@ -14,7 +14,7 @@ export class RecipesComponent implements OnInit {
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
-    // Settiing up listner
+    // Settiing up listnergit remote show origin 
     this.recipeService.recipeSelected.subscribe(
       (recipe: Recipe) => {
         this.selectedRecipe = recipe;
