@@ -1,4 +1,10 @@
-# Project1
+# Update Readme after Http Service
+
+## Added Http POST/PUT
+
+## Added Http GET
+
+## Added Resolver
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
