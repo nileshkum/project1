@@ -1,12 +1,20 @@
-# Update Readme after Http Service
+# Authentication
 
-## Added Http POST/PUT
+## Creating a new User
 
-## Added Http GET
+## Login the existing user
 
-## Added Resolver
+## Fetching and saving the data to server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+## Auto Login/Logout
+
+## Storing local data 
+
+## Handling Token : Fetching and Sending
+
+## Error Handling
+
+## Auth Guard
 
 ## Development server
 
