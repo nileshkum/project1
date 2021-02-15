@@ -1,5 +1,5 @@
-# Recipe Component Export Removed
-Removed Exports from Recipe Component since we were using it internally only.
+# Shopping List  Component split
+Added a new Feture for Shopiin List
 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
