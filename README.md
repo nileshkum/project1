@@ -1,10 +1,9 @@
-# Dynamic Component
+# Splitting the Component
 
-## Modals in Angular
+## Recipe component
 
-## Using ngIF 
+Create a new coponent for Recipe Feature. Moved alll declarations into new component.
 
-## Creating Modal with code
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
