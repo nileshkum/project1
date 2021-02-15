@@ -20,6 +20,8 @@ import { RecipeService } from './recipes/recipe.service';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingSpinerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AuthInceptorService } from './auth/auth-inceptor.service';
+import { AlertComponent } from './shared/alert/alert.component';
+import { PlaceholderDirective } from './shared/placeholder/placeholder.directive';
 
 
 
@@ -37,7 +39,9 @@ import { AuthInceptorService } from './auth/auth-inceptor.service';
     RecipeStartComponent,
     RecipeEditComponent,
     AuthComponent,
-    LoadingSpinerComponent
+    LoadingSpinerComponent,
+    AlertComponent,
+    PlaceholderDirective
 
   ],
   imports: [
@@ -55,5 +59,8 @@ import { AuthInceptorService } from './auth/auth-inceptor.service';
               }
               ],
   bootstrap: [AppComponent]
+  // entryComponents: [
+  //   AlertComponent
+  // ]
 })
 export class AppModule { }
