@@ -1,8 +1,5 @@
-# Splitting the Component
-
-## Recipe component
-
-Create a new coponent for Recipe Feature. Moved alll declarations into new component.
+# Recipe Component Export Removed
+Removed Exports from Recipe Component since we were using it internally only.
 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
