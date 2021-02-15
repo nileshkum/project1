@@ -1,6 +1,4 @@
-# Shopping List  Component split
-Added a new Feture for Shopiin List
-
+# Splitting Shared Module
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
