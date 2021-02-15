@@ -1,22 +1,10 @@
-# Authentication
+# Dynamic Component
 
-## Creating a new User
+## Modals in Angular
 
-## Login the existing user
+## Using ngIF 
 
-## Fetching and saving the data to server
-
-## Auto Login/Logout
-
-## Storing local data 
-
-## Handling Token : Fetching and Sending
-
-## Error Handling
-
-## Auth Guard
-
-## Development server
+## Creating Modal with code
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
