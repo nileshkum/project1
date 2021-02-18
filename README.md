@@ -1,4 +1,23 @@
-# Splitting Auth Module
+# Lazy Loading 
+
+## Implementing Lazy Loading 
+## Preloading Lazy Loaded Code
+# Services and Modules
+
+## Implmeneting Service across different modules
+
+# TypeScript Compiler
+## It compiles our code to JavaScriptCode
+
+# Angular Compiler
+## Automatically included in built code, it compiles template syntax to Javascirpt Dom instructions
+# AOT & JIT Compilation
+## Ahead of Time Compilation
+## Angular compiler runs during build process before the app is developed
+
+## Just in Time Compilation
+## Angular compiler runs in browser at runtime
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
