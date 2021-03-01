@@ -1,39 +1,23 @@
 // import { EventEmitter, Injectable } from '@angular/core';
 import { Injectable } from '@angular/core';
+import { Store } from '@ngrx/store';
 import { Subject } from 'rxjs';
 
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
 import { Recipe } from "./recipe.model";
+import * as ShoppingListActions from '../shopping-list/store/shopping-list.actions';
+import * as fromShopingList from '../shopping-list/store/shopping-list.reducer';
 
 @Injectable()
 export class RecipeService {
-  // recipeSelected =   new EventEmitter<Recipe>();
-  // recipeSelected =   new Subject<Recipe>();
 
   recipesChanged = new Subject<Recipe[]>();
 
-
-  //   private recipes: Recipe[] = [
-  //   new Recipe(
-  //     '1 Test Recipe',
-  //     'This is 1 test',
-  //     'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/11/samosa-recipe-480x270.jpg',
-  //     [
-  //       new Ingredient('Aalo', 5),
-  //       new Ingredient('Peas', 100)
-  //     ]),
-  //   new Recipe(
-  //     '2 Test Recipe',
-  //     'This is 2 test',
-  //     'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/11/samosa-recipe-480x270.jpg',
-  //     [
-  //       new Ingredient('Corriander', 50),
-  //       new Ingredient('Tamrind', 8)
-  //     ]),
-  // ];
   private recipes : Recipe[] = [];
-  constructor(private shopplingService: ShoppingListService){
+  constructor(private shopplingService: ShoppingListService,
+              // private store: Store<{shoppingList: {ingredients: Ingredient[]}}>){
+              private store: Store<fromShopingList.AppState>){
 
   }
 
@@ -51,7 +35,8 @@ setRecipes(recipes: Recipe[] ){
   }
 
   addIngedientToShoppingList(ingredients: Ingredient[]){
-      this.shopplingService.addIngredients(ingredients);
+      // this.shopplingService.addIngredients(ingredients);
+      this.store.dispatch(new ShoppingListActions.AddIngredients(ingredients));
   }
 
   addRecipe(recipe: Recipe){

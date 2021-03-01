@@ -1,6 +1,3 @@
-# Deployed at :
+# Implimentings ngRx*
 
-https://ng-course-recipe-book-c980d.web.app
-
-
-
+State management using ngRx
