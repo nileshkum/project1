@@ -16,7 +16,6 @@ export class RecipeService {
 
   private recipes : Recipe[] = [];
   constructor(private shopplingService: ShoppingListService,
-              // private store: Store<{shoppingList: {ingredients: Ingredient[]}}>){
               private store: Store<fromShopingList.AppState>){
 
   }
@@ -35,7 +34,6 @@ setRecipes(recipes: Recipe[] ){
   }
 
   addIngedientToShoppingList(ingredients: Ingredient[]){
-      // this.shopplingService.addIngredients(ingredients);
       this.store.dispatch(new ShoppingListActions.AddIngredients(ingredients));
   }
 
