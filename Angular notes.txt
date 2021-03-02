@@ -1,0 +1,55 @@
+1.Multiple parameters in pipes cab be given by seperating :
+2.To chain multiple pipes we can do using | but we need to keep in      mind the order of the pipes.
+3.To use custom pipes we have declare this is in app.module under declaration
+4.While creating a new pipes we have to implement PipeTransform and use transform method in pipe class.
+5.We also have to use @Pipe decorator and there we need to give a generic name to the pipe which can be used in html files.
+6. Using CLI to create pipe: ng generate pipe <name>  / ng g p <name>
+7. By Default pipes does not trigger on new data, basically on Array.
+8. To trigger the pipe with such scenarios we have to add a new parameter to the Pipe decorator i.e Pure: false but this can lead to performance issue and that is why angular does not have per defined 'filter' pipe 
+
+To do cross component data transfer , using subjects are good way but when we want to transfer data between single component. The good way is to return the data from sending service/component and subscribe in receiving end.
+
+Tap operator: It simply allows us to execute some code without altering the response so we can do something  with response without disturbing subscribe function and the function we pass as argument to subscribe
+
+Interceptors are basically used with Http request where if we want to add a common header to all our request, this will attach those first and then executes the call.
+This need a method 'intercept' to be implement in its class with req of type HttpRequest and next of type HttpHandler arguments and we have to return next with req.
+
+When can restrict this function to specific calls in its class .
+We can not change the actual req, we have to create a local with clone method and change the headers and pass new req in next method.
+We can add multiple interceptors, the sequence can be defined in app.module.ts
+
+While creating a service if we have to inject other serice into it , we had to declare @Injctable and declare this service in appmodule.
+We can also do that by directly giving "providedIn: 'root'" in injectedable.
+
+To use http functionalities we have to import HttpClientModul in app module and declare that in imports and we can use HttpClient in our services.
+
+We can use gaurd if we are trying to load detail page with out and recipe and route to recipes list
+tap() allows us to execute some code  without altering the data that is funnel through observalbles
+
+
+GETTER:
+  getter is used as a function but act like a property , but since its a getter we can not set its property .
+
+take(): its function for pipe which can be used to use subscribe for specific number of calls 
+exhaustMap(): if we have to combine multiple observabe and override previous observable to new
+
+#Ref Container: ViewContainerRef, is an object managed internlly by angular. it gives a refenrece pointer to a place inthe DOM with which it can interacract. It has co-ordinates, methods.
+
+***** nfIf and ngFOr is provided by BrowserModule.
+
+*** Module works independently, we have to import them everytime for all new feture. It will not be accessible by declaring in app module
+
+** Common Module is used for ngIf and ngFor 
+** We cannot declare a single Module in different Component, we can Import but not declare
+
+**ngServe uses Just in Time Compilation
+
+** Enviournment Variable
+
+https://ng-course-recipe-book-c980d.web.app
+
+**ngRx**
+Backend is termed as persistence state of backend
+When using store in component for type of store, the key name should be same what we declare in app component.
+We create state as key value pair, and we have to declare every reducer with its key in App State. either we can user this combination or we can create this defination as another interface and use this across our app state.
+Also for state management we should have actions for all of our state in action file.
