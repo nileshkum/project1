@@ -1,2 +1,4 @@
-# Remove ShoppingList Service
-Since we are managing everything using ngRx remove shopping List service as its not getting used.
+# Implement ngRx for Auth
+
+ngRx as RootState
+* ngRx in Authentication Flow
